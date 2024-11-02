@@ -51,3 +51,13 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         );
     return http.build();
 }
+```
+
+## Explicação da Configuração
+
+| Componente              | Descrição                                                                 |
+|-------------------------|---------------------------------------------------------------------------|
+| **`@Autowired`**        | Injeção de dependência para o serviço que carrega os detalhes do usuário. |
+| **`PasswordEncoder`**   | Um bean para codificar senhas utilizando BCrypt, garantindo a segurança das credenciais. |
+| **`SecurityFilterChain`** | Configuração das regras de segurança, incluindo o que é permitido para usuários não autenticados e como o login e logout devem ser tratados. |
+
