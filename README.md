@@ -61,3 +61,24 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 | **`PasswordEncoder`**   | Um bean para codificar senhas utilizando BCrypt, garantindo a segurança das credenciais. |
 | **`SecurityFilterChain`** | Configuração das regras de segurança, incluindo o que é permitido para usuários não autenticados e como o login e logout devem ser tratados. |
 
+
+## Como Rodar a Aplicação
+
+### Pré-requisitos
+- Certifique-se de que você possui o Java JDK 17 instalado.
+- O MongoDB deve estar em execução e acessível.
+
+### Passos para Executar
+1. **Clone o Repositório:**
+    
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd registration
+
+
+2. **Compile e Execute a Aplicação: Execute o seguinte comando no diretório do projeto para compilar e iniciar a aplicação:**
+
+     ```bash
+    mvn spring-boot:run
+
+3. **Acesse a Aplicação: A aplicação estará disponível em http://localhost:8080/.**
